@@ -101,11 +101,16 @@ public class App_Fincas {
         fnt_menuFinca(true);    
         }
     }
-
+    private static void fnt_menuParcelacion(boolean mparc){
+        while(mparc == true){
+            int mpa = Integer.parseInt(JOptionPane.showInputDialog(null, "MENU PARCELACION"));
+        }
+    }
     private static void fnt_selectorP(int opcionP){
         if (opcionP == 1){
             fnt_menuFinca(true); 
         }
+        
         
 
     }
