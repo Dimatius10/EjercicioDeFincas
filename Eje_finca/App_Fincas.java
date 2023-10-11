@@ -104,7 +104,7 @@ public class App_Fincas {
 
     private static void fnt_selectorP(int opcionP){
         if (opcionP == 1){
-            fnt_menuFinca(true);
+            fnt_menuFinca(true); 
         }
         
 
