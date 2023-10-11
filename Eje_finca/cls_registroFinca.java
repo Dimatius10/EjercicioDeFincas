@@ -19,4 +19,22 @@ public class cls_registroFinca {
         this.flt_prom_produccion = prom_produccion;
     }
     
+    //Getter
+    public String getNombre(){return this.str_nombre;}
+    public String getCodigo(){return this.str_codigo;}
+    public String getExtension(){return this.str_extension;}
+    public String getPropietario(){return this.str_propietario;}
+    public String getDireccion(){return this.str_direccion;}
+    public String getUbicacion(){return this.str_ubicacion;}
+    public String getAct_economica(){return this.str_act_economica;}
+    public float getProm_produccion(){return this.flt_prom_produccion;}
+
+    //Setter
+    public void setNombre (String nombre){this.str_nombre = nombre;}
+    public void setExtension (String extension){this.str_extension = extension;}
+    public void setPropietario (String propietario){this.str_propietario = propietario;}
+    public void setDireccion (String direccion){this.str_direccion = direccion;}
+    public void setUbicacion (String ubicacion){this.str_ubicacion = ubicacion;}
+    public void setAct_economica (String act_economica){this.str_act_economica = act_economica;}
+    public void setProm_produccion (float prom_produccion){this.flt_prom_produccion = prom_produccion;}
 }
