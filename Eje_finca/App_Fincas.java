@@ -57,8 +57,8 @@ public class App_Fincas {
         }else{
             JOptionPane.showMessageDialog(null, "Nombre de la finca: " + Finca[int_pos].getNombre() 
             + "\nExtensión de la finca: " + Finca[int_pos].getExtension() 
-            + "\nPropieario de la finca: " + Finca[int_pos].getPropietario()
-            + "\nDireccion de la finca: " + Finca[int_pos].getDireccion()
+            + "\nPropietario de la finca: " + Finca[int_pos].getPropietario()
+            + "\nDirección de la finca: " + Finca[int_pos].getDireccion()
             + "\nUbicación de la finca: " + Finca[int_pos].getUbicacion()
             + "\nActividad de la finca: " + Finca[int_pos].getAct_economica()
             + "\nProducción de la finca: " + Finca[int_pos].getProm_produccion());
@@ -202,6 +202,37 @@ public class App_Fincas {
         fnt_menuParcelacion(true);
         }
     }
+
+    private static void fnt_reporte(){
+        for (int i = 0; i < int_posiciones; i++){
+            for (int j = 0; j < int_posiciones2; j++){
+                if (Finca[i].equals("") || parcela[j].equals("")){
+                    JOptionPane.showMessageDialog(null, "Debe registrar una finca primero");
+                } else {
+                    JOptionPane.showMessageDialog(null, "\t<<< REPORTE >>> \n" 
+                    + "\n\t<<< FINCA >>>\n"
+                    + "\nNombre de la finca: " + Finca[i].getNombre()
+                    + "\nCódigo finca: " + Finca[i].getCodigo()
+                    + "\nExtensión de la finca: " + Finca[i].getExtension() 
+                    + "\nPropietario de la finca: " + Finca[i].getPropietario()
+                    + "\nDirección de la finca: " + Finca[i].getDireccion()
+                    + "\nUbicación de la finca: " + Finca[i].getUbicacion()
+                    + "\nActividad de la finca: " + Finca[i].getAct_economica()
+                    + "\nProducción de la finca: " + Finca[i].getProm_produccion()
+                    + "---------------------------------------\n"
+                    + "\n\t<<<PARCELAS >>>"
+                    + "\nCódigo de la parcela: " + parcela[j].getCodigo()
+                    + "\nNombre de la parcela: " + parcela[j].getNombre() 
+                    + "\nActividad de la parcela: " + parcela[j].getActividad() 
+                    + "\nProducción de la parcela: " + parcela[j].getProduccion()
+                    + "\nStock de la parcela: " + parcela[j].getStock()
+                    );
+                }
+            }
+        }
+        
+    }
+
     private static void fnt_selectorP(int opcionP){
         if (opcionP == 1){
             fnt_menuFinca(true); 
@@ -209,9 +240,12 @@ public class App_Fincas {
         if (opcionP == 2){
             fnt_menuParcelacion(true);
         }
-        
-        
-
+        if (opcionP == 3){
+            fnt_reporte();
+        }
+        if (opcionP == 4){
+            System.exit(0);
+        }
     }
     private static void fnt_menuPrincipal(boolean mp){
         while (mp == true){
