@@ -8,15 +8,13 @@ public class cls_parcelacion{
     String str_cod_finca;
 
 
-    public cls_parcelacion(String codigo , String nombre , String actividad , String produccion , int stock, String cod_finca){
+    public cls_parcelacion(String codigo , String nombre , String actividad , String produccion , int stock){
         
     this.str_codigo = codigo;
     this.str_nombre = nombre ;
     this.str_actividad = actividad ;
     this.str_produccion = produccion ;
     this.int_stock = stock ;
-    this.str_cod_finca = cod_finca ;
-
     }
 
 // seters 
@@ -32,7 +30,6 @@ public String getNombre (){return this.str_nombre;}
 public String getActividad(){return this.str_actividad;}
 public String getProduccion (){return this.str_produccion;}
 public int getStock () { return this.int_stock ;}
-public String getCod_Finca (){return this.str_cod_finca;}
 
 }
 
