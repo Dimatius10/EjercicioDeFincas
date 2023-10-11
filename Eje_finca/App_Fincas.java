@@ -9,18 +9,22 @@ public class App_Fincas {
     public static void main(String[] args) {
         fnt_menuPrincipal(true);
     }
+
+    private static void fnt_menuFinca(boolean mb){
+        while(mb == true){
+            int m = Integer.parseInt(JOptionPane.showInputDialog(null, "\t--- MENÚ FINCA ---"));
+        }
+    }
+
     private static void fnt_selectorP(int opcionP){
         if (opcionP == 1){
-            String nombre = JOptionPane.showInputDialog(null, "Nombre de la finca: ");
-            String codigo = JOptionPane.showInputDialog(null, " Codigo de la finca: ");
-            String extension = JOptionPane.showInputDialog(null,  "Extension: ");
-            String
+            fnt_menuFinca(true);
         }
     }
     private static void fnt_menuPrincipal(boolean mp){
         while (mp == true){
             int m = Integer.parseInt(JOptionPane.showInputDialog(null , "<<<MENU PRINCIPAL>>>\n" 
-            + "1.Registro Finca\n" 
+            + "1.Menú Finca\n" 
             + "2.Parcelación \n" 
             + "3.Reportes\n" 
             + "4.Salir"));
