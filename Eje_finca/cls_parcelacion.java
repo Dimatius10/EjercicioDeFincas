@@ -19,8 +19,20 @@ public class cls_parcelacion{
 
     }
 
-// geters 
+// seters 
 
+public void setNombre (String nombre ){this.str_nombre = nombre;}
+public void setActividad (String actividad){this.str_actividad  = actividad ;}
+public void setProduccion (String produccion){this.str_produccion = produccion;}
+public void setStock (String stock){this.str_stock = stock;}
+
+//geters 
+public  String getCodigo () {return this.str_codigo ;}
+public String getNombre (){return this.str_nombre;}
+public String getActividad(){return this.str_actividad;}
+public String getProduccion (){return this.str_produccion;}
+public String getStock () { return this.str_stock ;}
+public String getCod_Finca (){return this.str_cod_finca;}
 
 }
 
